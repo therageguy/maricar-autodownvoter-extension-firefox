@@ -1,0 +1,32 @@
+{
+  "manifest_version": 3,
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "maricar-auto-downvoter@horriblepp.info"
+    }
+  },
+  "name": "Maricar Auto-Downvoter",
+  "version": "1.0",
+  "description": "Automatically downvotes comments on horriblepp.info based on username and keywords.",
+  "permissions": [
+    "storage"
+  ],
+  "host_permissions": [
+    "*://disqus.com/*",
+    "*://*.disqus.com/*",
+    "*://*.horriblepp.info/*"
+  ],
+  "options_page": "options.html",
+  "content_scripts": [
+    {
+      "matches": [
+        "*://*.disqus.com/embed/comments/*"
+      ],
+      "js": [
+        "content_disqus.js"
+      ],
+      "run_at": "document_end",
+      "all_frames": true
+    }
+  ]
+}
