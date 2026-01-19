@@ -2,6 +2,8 @@
 
 A Firefox extension that automatically downvotes Disqus comments on `horriblepp.info` based on user-defined display names, profile handles, and optional keywords.
 
+Looking for the Chrome version? [Get it here](https://github.com/therageguy/maricar-autodownvoter-extension).
+
 ## Features
 
 - **Automated Downvoting**: Automatically clicks the downvote button on comments matching your criteria.
