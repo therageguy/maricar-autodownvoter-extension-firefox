@@ -2,7 +2,13 @@
   "manifest_version": 3,
   "browser_specific_settings": {
     "gecko": {
-      "id": "maricar-auto-downvoter@horriblepp.info"
+      "id": "maricar-auto-downvoter@horriblepp.info",
+      "data_collection_permissions": {
+        "required": [
+          "none"
+        ],
+        "optional": []
+      }
     }
   },
   "name": "Maricar Auto-Downvoter",
